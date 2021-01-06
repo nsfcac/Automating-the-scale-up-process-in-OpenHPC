@@ -1,5 +1,6 @@
-                           Improving the Automation of Scaling-up an OpenHPC Cluster
-                       (Gathering Mac Address of Internal Network by Redfish/IPMI Hardware Management Tools)
+
+                        Improving the Automation of Scaling-up an OpenHPC Cluster
+        (Gathering Mac Address of Internal Network by Redfish/IPMI Hardware Management Tools)
 
 OpenHPC is a tool for creating, composing, and administering high-performance computing clusters. It provides methods to register nodes and provide the information needed to provision them and integrate them into data centers. In the current OpenHPC methodology for creating a cluster, we need to have the Mac addresses of all the compute nodes in advance and manually type in the “input.local” file. It is a time-consuming step, especially for big data centers with a massive number of compute nodes. 
 
@@ -8,3 +9,5 @@ A baseboard management controller (BMC) is a dedicated processor inside the mach
 This project aims to use IPMI and Redfish to get access to the BMC of the nodes and gather the MAC address of the selected internal interface based on the selected internal interface by the admin of the cluster. It helps to automate the process of adding nodes to a data center better than it has been.  
 
 By starting from BMC, we set all nodes to use DHCP  for their BMC addresses. And then, use the BMC to explore the Mac addresses of the interfaces and allow the user to select which will be the provisioning interface, which will be the control interfaces. The proposed method is the opposite of what we usually do: to shoot a node by knowing its mac address by manually harvesting it—then shooting the image; Once the image is up, it gets provisioned through the BMC. Our implemented method is backward. The new approach makes the new nodes auto-discovered, and you never have to write down their mac addresses manually. Therefore, the proposed method improves the automation of scaling up a cluster using hardware management tools. The tool provides two options for users. First, network discovery: it gets a range of BMC-IP addresses and checks the list of available network interfaces. It saves the information in a JSON file. Second, expanding the cluster: It gets a range of BMC-IP addresses, and based on the internal network NIC, it updates the “input.local” file by inserting the mac-addresses of nodes there.
+
+
