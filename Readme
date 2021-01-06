@@ -1,6 +1,9 @@
 
-                        Improving the Automation of Scaling-up an OpenHPC Cluster
-        (Gathering Mac Address of Internal Network by Redfish/IPMI Hardware Management Tools)
+# Improving the Automation of Scaling-up an OpenHPC Cluster
+
+# (Gathering Mac Address of Internal Network by Redfish/IPMI Hardware Management Tools)
+
+
 
 OpenHPC is a tool for creating, composing, and administering high-performance computing clusters. It provides methods to register nodes and provide the information needed to provision them and integrate them into data centers. In the current OpenHPC methodology for creating a cluster, we need to have the Mac addresses of all the compute nodes in advance and manually type in the “input.local” file. It is a time-consuming step, especially for big data centers with a massive number of compute nodes. 
 
