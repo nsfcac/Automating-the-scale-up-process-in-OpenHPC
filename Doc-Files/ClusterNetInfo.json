@@ -1,0 +1,1213 @@
+
+
+
+{
+    "hostname": "comp-44",
+    "NICs": {},
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.5.4",
+    "power state": false,
+    "HN-BMC": "",
+    "systemName": {}
+}
+
+
+{
+    "hostname": "comp-43",
+    "NICs": {},
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.5.3",
+    "power state": false,
+    "HN-BMC": "",
+    "systemName": {}
+}
+
+
+{
+    "hostname": "comp-41",
+    "NICs": {},
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.5.1",
+    "power state": false,
+    "HN-BMC": "",
+    "systemName": {}
+}
+
+
+{
+    "hostname": "comp-45",
+    "NICs": {},
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.5.5",
+    "power state": false,
+    "HN-BMC": "",
+    "systemName": {}
+}
+
+
+{
+    "hostname": "comp-42",
+    "NICs": {},
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.5.2",
+    "power state": false,
+    "HN-BMC": "",
+    "systemName": {}
+}
+
+
+{
+    "hostname": "comp-46",
+    "NICs": {},
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.5.6",
+    "power state": false,
+    "HN-BMC": "",
+    "systemName": {}
+}
+
+
+{
+    "hostname": "comp-47",
+    "NICs": {},
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.5.7",
+    "power state": false,
+    "HN-BMC": "",
+    "systemName": {}
+}
+
+
+{
+    "hostname": "comp-48",
+    "NICs": {},
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.5.8",
+    "power state": false,
+    "HN-BMC": "",
+    "systemName": {}
+}
+
+
+{
+    "hostname": "comp-49",
+    "NICs": {},
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.5.9",
+    "power state": false,
+    "HN-BMC": "",
+    "systemName": {}
+}
+
+
+{
+    "hostname": "comp-50",
+    "NICs": {},
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.5.10",
+    "power state": false,
+    "HN-BMC": "",
+    "systemName": {}
+}
+
+
+{
+    "hostname": "comp-21",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:B9:82",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:B9:80",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.3.1",
+    "power state": true,
+    "HN-BMC": "compute-3-1",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-2",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:BC:DC",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:BC:DA",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.1.2",
+    "power state": true,
+    "HN-BMC": "compute-1-2",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-8",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "iDRAC.Embedded.1#ServiceModule.1#OSLogicalNetwork.4",
+            "MACAddress": "7C-D3-0A-D0-E1-A2",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/iDRAC.Embedded.1%23ServiceModule.1%23OSLogicalNetwork.4"
+        },
+        "NIC1": {
+            "NIC_Id": "iDRAC.Embedded.1#ServiceModule.1#OSLogicalNetwork.2",
+            "MACAddress": "7C-D3-0A-D0-E1-A0",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/iDRAC.Embedded.1%23ServiceModule.1%23OSLogicalNetwork.2"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.1.8",
+    "power state": true,
+    "HN-BMC": "compute-1-8",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-17",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:C3:6C",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:C3:6A",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.2.7",
+    "power state": true,
+    "HN-BMC": "compute-2-7",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-32",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:C0:66",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:C0:64",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.4.2",
+    "power state": true,
+    "HN-BMC": "compute-4-2",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-12",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "iDRAC.Embedded.1#ServiceModule.1#OSLogicalNetwork.3",
+            "MACAddress": "7C-D3-0A-D7-BE-08",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/iDRAC.Embedded.1%23ServiceModule.1%23OSLogicalNetwork.3"
+        },
+        "NIC1": {
+            "NIC_Id": "iDRAC.Embedded.1#ServiceModule.1#OSLogicalNetwork.2",
+            "MACAddress": "7C-D3-0A-D7-BE-06",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/iDRAC.Embedded.1%23ServiceModule.1%23OSLogicalNetwork.2"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.2.2",
+    "power state": true,
+    "HN-BMC": "compute-2-2",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-4",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:C1:02",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:C1:00",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.1.4",
+    "power state": true,
+    "HN-BMC": "compute-1-4",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-15",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:E0:52",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:E0:50",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.2.5",
+    "power state": true,
+    "HN-BMC": "compute-2-5",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-51",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:C6:39:62",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:C6:39:60",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.6.1",
+    "power state": true,
+    "HN-BMC": "compute-6-1",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-37",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:C4:80",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:C4:7E",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.4.7",
+    "power state": true,
+    "HN-BMC": "compute-4-7",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-5",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:BB:C8",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:BB:C6",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.1.5",
+    "power state": true,
+    "HN-BMC": "compute-1-5",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-36",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:C7:26",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:C7:24",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.4.6",
+    "power state": true,
+    "HN-BMC": "compute-4-6",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-13",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:BD:24",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:BD:22",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.2.3",
+    "power state": true,
+    "HN-BMC": "compute-2-3",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-7",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:C3:54",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:C3:52",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.1.7",
+    "power state": true,
+    "HN-BMC": "compute-1-7",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-57",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:C6:3A:5E",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:C6:3A:5C",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.6.7",
+    "power state": true,
+    "HN-BMC": "compute-6-7",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-25",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:CB:94",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:CB:92",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.3.5",
+    "power state": true,
+    "HN-BMC": "compute-3-5",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-16",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:BF:EE",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:BF:EC",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.2.6",
+    "power state": true,
+    "HN-BMC": "compute-2-6",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-34",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:C4:0E",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:C4:0C",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.4.4",
+    "power state": true,
+    "HN-BMC": "compute-4-4",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-3",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D0:D7:64",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D0:D7:62",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.1.3",
+    "power state": true,
+    "HN-BMC": "compute-1-3",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-1",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:C2:BE",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:C2:BC",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.1.1",
+    "power state": true,
+    "HN-BMC": "compute-1-1",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-11",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:BD:78",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:BD:76",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.2.1",
+    "power state": true,
+    "HN-BMC": "compute-2-1",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-39",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:D8:7E",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:D8:7C",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.4.9",
+    "power state": true,
+    "HN-BMC": "compute-4-9",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-10",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:E1:D2",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:E1:D0",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.1.10",
+    "power state": true,
+    "HN-BMC": "compute-1-10",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-9",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:C1:74",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:C1:72",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.1.9",
+    "power state": true,
+    "HN-BMC": "compute-1-9",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-22",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D0:E2:92",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D0:E2:90",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.3.2",
+    "power state": true,
+    "HN-BMC": "compute-3-2",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-14",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:BE:26",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:BE:24",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.2.4",
+    "power state": true,
+    "HN-BMC": "compute-2-4",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-20",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:CD:D6:D8",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:CD:D6:D6",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.2.10",
+    "power state": true,
+    "HN-BMC": "compute-2-10",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-29",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:BA:8A",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:BA:88",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.3.9",
+    "power state": true,
+    "HN-BMC": "compute-3-9",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-18",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:D7:A6",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:D7:A4",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.2.8",
+    "power state": true,
+    "HN-BMC": "compute-2-8",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-40",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D0:E3:4C",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D0:E3:4A",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.4.10",
+    "power state": true,
+    "HN-BMC": "compute-4-10",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-33",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:CE:46",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:CE:44",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.4.3",
+    "power state": true,
+    "HN-BMC": "compute-4-3",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-6",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:C6:2F:24",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:C6:2F:22",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.1.6",
+    "power state": true,
+    "HN-BMC": "compute-1-6",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-52",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:DA:4A:5E",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:DA:4A:5C",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.6.2",
+    "power state": true,
+    "HN-BMC": "compute-6-2",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-30",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:D1:0A",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:D1:08",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.3.10",
+    "power state": true,
+    "HN-BMC": "compute-3-10",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-26",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D0:D8:24",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D0:D8:22",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.3.6",
+    "power state": true,
+    "HN-BMC": "compute-3-6",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-23",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:D2:60",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:D2:5E",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.3.3",
+    "power state": true,
+    "HN-BMC": "compute-3-3",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-55",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:C6:3C:68",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:C6:3C:66",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.6.5",
+    "power state": true,
+    "HN-BMC": "compute-6-5",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-38",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:C8:2E",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:C8:2C",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.4.8",
+    "power state": true,
+    "HN-BMC": "compute-4-8",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-59",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:BF:28:D4",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:BF:28:D2",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.6.9",
+    "power state": true,
+    "HN-BMC": "compute-6-9",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-53",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:C6:3C:9E",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:C6:3C:9C",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.6.3",
+    "power state": true,
+    "HN-BMC": "compute-6-3",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-35",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:D6:32",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:D6:30",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.4.5",
+    "power state": true,
+    "HN-BMC": "compute-4-5",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-60",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:BF:29:D0",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:BF:29:CE",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.6.10",
+    "power state": true,
+    "HN-BMC": "compute-6-10",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-28",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "iDRAC.Embedded.1#ServiceModule.1#OSLogicalNetwork.4",
+            "MACAddress": "7C-D3-0A-D2-5B-C0",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/iDRAC.Embedded.1%23ServiceModule.1%23OSLogicalNetwork.4"
+        },
+        "NIC1": {
+            "NIC_Id": "iDRAC.Embedded.1#ServiceModule.1#OSLogicalNetwork.2",
+            "MACAddress": "7C-D3-0A-D2-5B-BE",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/iDRAC.Embedded.1%23ServiceModule.1%23OSLogicalNetwork.2"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.3.8",
+    "power state": true,
+    "HN-BMC": "compute-3-8",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-58",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:C6:37:0A",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:C6:37:08",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.6.8",
+    "power state": true,
+    "HN-BMC": "compute-6-8",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-54",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:C6:3C:92",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:C6:3C:90",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.6.4",
+    "power state": true,
+    "HN-BMC": "compute-6-4",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-27",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D2:5D:EE",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D2:5D:EC",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.3.7",
+    "power state": true,
+    "HN-BMC": "compute-3-7",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-19",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:D1:3A",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:D1:38",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.2.9",
+    "power state": true,
+    "HN-BMC": "compute-2-9",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-24",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:D8:60",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:D8:5E",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.3.4",
+    "power state": true,
+    "HN-BMC": "compute-3-4",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-31",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:D7:CC:DE",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:D7:CC:DC",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.4.1",
+    "power state": true,
+    "HN-BMC": "compute-4-1",
+    "systemName": "System.Embedded.1"
+}
+
+
+{
+    "hostname": "comp-56",
+    "NICs": {
+        "NIC2": {
+            "NIC_Id": "NIC.Embedded.2-1-1",
+            "MACAddress": "7C:D3:0A:C6:3F:14",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.2-1-1"
+        },
+        "NIC1": {
+            "NIC_Id": "NIC.Embedded.1-1-1",
+            "MACAddress": "7C:D3:0A:C6:3F:12",
+            "URI": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces/NIC.Embedded.1-1-1"
+        }
+    },
+    "time": "2021-01-06 08:19",
+    "BMC_IP": "10.101.6.6",
+    "power state": true,
+    "HN-BMC": "compute-6-6",
+    "systemName": "System.Embedded.1"
+}
+
+
