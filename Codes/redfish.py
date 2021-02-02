@@ -1,10 +1,13 @@
 
-#This program gets an IP address and it creates two JSON objects: [ one of them with full info (json_output), and a small json object just with necessary information (json_SystemInfo)]
-
+#This program uses DMTF Redfish technology to gather hardware management information from the BMC of the machines of a cluster.
+# To use this program, call getNodeData function. This function has one input and three outputs.
+#jsonObjList,dicList, errorList = getNodeData(redfishNodes) 
+   #input: redfishNodes (It is a list of dictionaries. Each member if the list is a dictionary contains the name of the node (its blank, if we do not have the name of the node in advance.), and the BMC IP address of that.)
+   # oputput: jsonObjList,dicList, errorList: We have 3 outputs, the gathered information in Json format, The gathered information in a list of Dictionaries, and an errorList.
 
 
 import requests
-import socket
+#import socket
 import ipaddress
 import json
 import datetime
@@ -180,7 +183,7 @@ def generate_Output(ip, hn):
   
 #part 4 get information for one node --------------------------------------------------------------------------
 #----------------------------------------------------------------------------------------------------------------------
-def getOneNodeData(ip,hn,mylistJSON,mylistofDicSysteminfo,myErrList): #sl is a list of  hostname and ip lists
+def getOneNodeData(ip,hn,mylistJSON,mylistofDicSysteminfo,myErrList): 
     '''
      get information for one node.
 	 
@@ -208,10 +211,11 @@ def getNodeData(sl): #sl is a list of  hostname and ip lists
      get information for a list of nodes.
 	 
      It Accepts an input as a list of lists: getNodeData([[“hostname”, “iDRAC IPv4 Address”], …])
-     It Returns 2 objects:
+     It Returns 3 objects:
 
                                                     i.     List of JSON objects:  [JSON, …]
-                                                   ii.     List of lists with the errors:  [[“hostname”, “ipv4 address”, “error”], …]
+                                                   ii.     List of Dictionary objects [dic, ...]
+                                                  iii.     List of lists with the errors:  [[“hostname”, “ipv4 address”, “error”], …]
     '''
     mylistJSON=[]
     mylistofDicSysteminfo=[]

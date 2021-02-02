@@ -1,19 +1,23 @@
 
-#This function is for printing the menu and gathering data form user.
+#This code is for printing the menu and gathering data form user.
 
 
 
-
+#The codes in Codes directory
 import redfish
+import ipmi
+import displayInfoRedfish
+import displayInfoIPMI
+
+# other libraries
 import json
 import time
-import monitoringTest
 import os
-#import ipmi
+
 #define global variables
 newNodesNumber=1   #It shows the number of the nodes user wants to add to the cluster(Default=1).
 
-redfishNodes = []
+nodes = []
 #Part1: This function is for printing the title of the app.
 #----------------------------------------------------------------------------------------------------------------------
 def printTitle():
@@ -111,10 +115,15 @@ def netDiscovery():
 
     '''
    
-          
-    h_m_tech="Redfish"
+#********************************************************************************
+#Select Hardware Managment Technology to gather data
+    h_m_tech="Redfish"      # The default Hardware Managment Technology
+    ci=input(" \n ......................... \n Select Hardware Management Technology(Default=Redfish): \n  1) IPMI \n  2) Redfish  \n  \n Answer:")
+    if (ci=="1" or ci=="ipmi" or ci=="IPMI" or ci=="Ipmi" ):
+              h_m_tech="IPMI"         
+    
     clusterInfoLinesList =[]  # The list of IPs form clusterinfo file.
-    redfishNodes=[]          # The list of computer names and IPs.
+    nodes=[]          # The list of computer names and IPs.
 #********************************************************************************
 #Read list of BMC IPs from a file
     clusterInfoFilePass="../Doc-Files/clusterInfo"      # the default file contains BMC IPs
@@ -141,7 +150,7 @@ def netDiscovery():
 
     for com_ip in clusterInfoLinesList:
       
-                               redfishNodes.append(["",com_ip])
+                               nodes.append(["",com_ip])
    
 
     if (h_m_tech=="Redfish"):  
@@ -150,13 +159,33 @@ def netDiscovery():
                              print("\t\t.............................................................")
                              time.sleep(0.5)
            print("Please wait.....\n\n")
-           jsonObjList,dicList, errorList = redfish.getNodeData(redfishNodes)
+           jsonObjList,dicList, errorList = redfish.getNodeData(nodes)
            #print (dicList)
-           monitoringTest.printNetDiscoveryInfo(dicList)
+           displayInfoRedfish.printNetDiscoveryInfo(dicList)
+           print("\n\n\n\n\n ......................... \n")
+    else:
+           vendor="Dell" # (Default)
+           ci=input(" \n ......................... \n select the vendor of the new compute nodes(Default=Dell): \n  1) Dell \n  2) SuperMicro  \n  3) Intel  \n  4) Other \n  \n Answer:")
+    #if (ci=="1" or ci=="Dell" or ci=="dell" or ci=="DELL" ):
+     # Vendor="Dell"
+           if (ci=="2" or ci=="SuperMicro" or ci=="Super Micro" or ci=="super micro" or ci=="SUPER MICRO" or ci=="Super micro" or ci=="supermicro" or ci=="Supermicro" ):
+                                   vendor="SuperMicro"
+           if (ci=="3" or ci=="Intel" or ci=="intel" or ci=="INTEL" ):
+                                   vendor="Intel"
+           if (ci=="4" or ci=="Other" or ci=="other" or ci=="OTHER" ):
+                                   vendor="Other"
+           print("\n\n\n\nPlease wait to finish the network discovering process by IPMI....  ")
+           for i in range(8):
+                             print("\t\t.............................................................")
+                             time.sleep(0.5)
+           print("Please wait.....\n\n")
+           jsonObjList,dicList, errorList = ipmi.getNodeData(nodes,vendor)
+           #print (dicList)
+           displayInfoIPMI.printNetDiscoveryInfo(dicList)
            print("\n\n\n\n\n ......................... \n")
 
    
-#********************************************************************************
+#******SystemInfi**************************************************************************
 # Writing Information to a json file
 
     try:
@@ -174,7 +203,7 @@ def netDiscovery():
 
 
 
-          # JsonObj=monitoringTest.main()
+         
 #********************************************************************************
 # Print menu
     #printMenu()
@@ -201,9 +230,9 @@ def clusterMacUpdate():
     clusterInfo="../Doc-Files/clusterInfo"
     
     if(h_m_tech=="IPMI"):
-                       ipmiUpdateMacInfo()
+                       updateMacInfo(1)
     else:
-                       redfishUpdateMacInfo()
+                       updateMacInfo(2)
 
 
 #----------------------------------------------------------------------------------------------------------------------
@@ -214,11 +243,15 @@ def clusterMacUpdate():
 
 #Part6: This function updates mac information using Redfish
 #----------------------------------------------------------------------------------------------------------------------
-def redfishUpdateMacInfo():
+def updateMacInfo(techType):
     '''
          This function is for updating input.local file when we want to expand the cluster using Redfish.
 
     '''
+    if (techType==1):
+                     h_m_tech="IPMI"
+    else:
+                     h_m_tech="Redfish"
 
 #----------------
     ni=input(" \n ......................... \n Select Network Interface?(Default=NIC1):  \n   1)NIC1 \n   2)NIC2  \n   3)NIC3  \n   4)NIC4  \n  \n Answer:")
@@ -234,16 +267,17 @@ def redfishUpdateMacInfo():
                 netInt="NIC4"
                 eth="eth4"
 #-----------------
-    prefix='c'
-    prefix=input(" \n ......................... \n Select compute_prefix(Default=c):  \n  \n Answer:")
 
+    prefix=input(" \n ......................... \n Select compute_prefix(Default=c):  \n  \n Answer:")
+    if (len(prefix)==0):
+            prefix='c'  # Default Prefix  
 
 #-----------------    
 # 
 
-    h_m_tech="Redfish"
+    
     clusterInfoLinesList =[]  # The list of IPs form clusterinfo file.
-    redfishNodes=[]          # The list of computer names and IPs.
+    nodes=[]          # The list of computer names and IPs.
 #********************************************************************************
 #Read list of BMC IPs from a file
     clusterInfoFilePass="../Doc-Files/clusterInfo"      # the default file contains BMC IPs
@@ -273,7 +307,7 @@ def redfishUpdateMacInfo():
                                
                                
                                com_name=prefix+str(i) 
-                               redfishNodes.append([com_name,com_ip])
+                               nodes.append([com_name,com_ip])
                                i=i+1
 
 
@@ -283,10 +317,35 @@ def redfishUpdateMacInfo():
                              print("\t\t.............................................................")
                              time.sleep(0.5)
            print("Please wait.....\n\n")
-           jsonObjList,dicList, errorList = redfish.getNodeData(redfishNodes)
+           jsonObjList,dicList, errorList = redfish.getNodeData(nodes)
            #print (dicList)
-           monitoringTest.printNetDiscoveryInfo(dicList)
+           displayInfoRedfish.printNetDiscoveryInfo(dicList)
            print("\n\n\n\n\n ......................... \n")
+    
+
+    else:
+           
+           vendor="Dell" # (Default)
+           ci=input(" \n ......................... \n select the vendor of the new compute nodes(Default=Dell): \n  1) Dell \n  2) SuperMicro  \n  3) Intel  \n  4) Other \n  \n Answer:")
+    #if (ci=="1" or ci=="Dell" or ci=="dell" or ci=="DELL" ):
+     # Vendor="Dell"
+           if (ci=="2" or ci=="SuperMicro" or ci=="Super Micro" or ci=="super micro" or ci=="SUPER MICRO" or ci=="Super micro" or ci=="supermicro" or ci=="Supermicro" ):
+                                   vendor="SuperMicro"
+           if (ci=="3" or ci=="Intel" or ci=="intel" or ci=="INTEL" ):
+                                   vendor="Intel"
+           if (ci=="4" or ci=="Other" or ci=="other" or ci=="OTHER" ):
+                                   vendor="Other"
+           print("\n\n\n\nPlease wait to finish the network discovering process by IPMI....  ")
+           for i in range(8):
+                             print("\t\t.............................................................")
+                             time.sleep(0.5)
+           print("Please wait.....\n\n")
+           jsonObjList,dicList, errorList = ipmi.getNodeData(nodes,vendor)
+           #print (dicList)
+           displayInfoIPMI.printNetDiscoveryInfo(dicList)
+           print("\n\n\n\n\n ......................... \n")
+
+
 
 
 #********************************************************************************
@@ -311,7 +370,7 @@ def redfishUpdateMacInfo():
 
     try:
         localfile = open("../Doc-Files/input.local", "w+", encoding='utf-8')
-        l1=compute_prefix="${compute_prefix:-"+prefix+"}\n"  #compute_prefix="${compute_prefix:-c}"
+        l1="compute_prefix=\"${compute_prefix:-"+prefix+"}\"\n"  #compute_prefix="${compute_prefix:-c}"
         localfile.write(l1)
         l2="sms_eth_internal=\"${sms_eth_internal:-"+eth+"}\"\n"
         localfile.write(l2) # sms_eth_internal="${sms_eth_internal:-eth_i}"
@@ -341,57 +400,6 @@ def redfishUpdateMacInfo():
         localfile.close()
     except:
        print("problem in opening the ../Doc-Files/ClusterNetInfo.json file.")
-
-
-
-#********************************************************************************
-# Print menu
-    #printMenu()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#ci=input(" \n ......................... \n select the vendor of new compute nodes: \n  1) Dell \n  2) Intel \n  3) Super Micro \n  \n Answer:")
-    #if (ci=="1" or ci=="Dell" or ci=="dell" or ci=="DELL" ):
-     # Vendor="Dell"
-    #if (ci=="2" or ci=="Intel" or ci=="intel" or ci=="INTEL" ):
-    #  Vendor="Intel"
-    #if (ci=="3" or ci=="SuperMicro" or ci=="Super Micro" or ci=="super micro" or ci=="SUPER MICRO" or ci=="Super micro" or ci=="supermicro" or ci=="Supermicro" ):
-     # Vendor="SuperMicro"
-    #print("+++++++++++++++++"+Vendor)
-    
-   # h_m_tech=input(" \n ......................... \n Which hardware management technology you want to use to gather information?(Default=IPMI): \n  1) IPMI \n  2) Redfish  \n  \n Answer:")
-
-    #NICNames=""
-    #i=1
-    #print (type(JsonObj[0]))
-    #print(JsonObj)
-    #for a,b in JsonObj[0]['NICs'].items:
-
-#                NICNames=ICNames+"\n"+str(i)+") "+a+" \n"
-
- #               i=i+1
-  #  net_interface=input(" \n ......................... \n Which network interface shows the internal network?(Default=NIC1) "+NICNames+" Answer:")
-    
-
-
-
     
 #----------------------------------------------------------------------------------------------------------------------
 
@@ -420,7 +428,7 @@ def validate_ip(s):
 #----------------------------------------------------------------------------------------------------------------------
 
 
-#Part6: The main function.
+#Part8: The main function.
 #----------------------------------------------------------------------------------------------------------------------
 def main():
     '''
@@ -434,7 +442,7 @@ def main():
 
 
 #----------------------------------------------------------------------------------------------------------------------
-# Part7:Call the main function.
+# Part9:Call the main function.
 if __name__== "__main__":
   main()
 

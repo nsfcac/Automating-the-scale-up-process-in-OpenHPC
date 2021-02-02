@@ -1,6 +1,5 @@
-#import ipmi
-#import redfish
 
+#This code is for displaying network discovery data in a nice format (for Redfish Discovery).
 
 #Part1: This Function is for have a nice print of nodes information
 #----------------------------------------------------------------------------------------------------------------------
