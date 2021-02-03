@@ -129,19 +129,25 @@ After collecting data, the gathered discovery Information will be saved in the .
 
 Please visit the following links and check the video which shows how to use the application.
 
-     • Presentation: [Introduce OpenHPC-Get-Mac Application](https://drive.google.com/file/d/1f3Yd5aaDj9zhgw_8wExsCsIUUdvJE7s5/view?usp=sharing)
+Presentation:
+ [Introduce OpenHPC-Get-Mac Application](https://drive.google.com/file/d/1f3Yd5aaDj9zhgw_8wExsCsIUUdvJE7s5/view?usp=sharing)
 	
 	 
-     • [Demo](https://drive.google.com/file/d/1rSuk2ugNkjkiPHGa4pc7ef5pP9V6tV05/view?usp=sharing)
-     • Demo-paer1:  Running the Application in the RedRaider Cluster (using Redfish)
+Demo:
+ [Introduce OpenHPC-Get-Mac Application](https://drive.google.com/file/d/1rSuk2ugNkjkiPHGa4pc7ef5pP9V6tV05/view?usp=sharing)
+
+• Demo-paer1:  Running the Application in the RedRaider Cluster (using Redfish)
+
                  • Testbed: RedRaider Cluster
 
-     • Demo-part2:  Running the Application in the Zephyr Cluster (using IPMI)
+• Demo-part2:  Running the Application in the Zephyr Cluster (using IPMI)
+
                  • Testbed: Zephyr Cluster
 
 
-      Demo: https://youtu.be/6jNhuDPta5Q?t=117
-	  Presentation: https://youtu.be/kDQWN6bbPMc
+Demo: https://youtu.be/6jNhuDPta5Q?t=117
+
+Presentation: https://youtu.be/kDQWN6bbPMc
 		   
 
 

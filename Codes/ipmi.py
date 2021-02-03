@@ -120,7 +120,7 @@ def generate_Output(vendor,ip, hn):
     for l  in lines:
                   if (len(l)>18 ):
                        if( '0'<=l[0]<='9'):
-                                      nicNumber=int(l[0])
+                                      nicNumber=int(l[0])+1
                                       ind=1
                                       index=index+1
                                       while(l[ind]==" "):
