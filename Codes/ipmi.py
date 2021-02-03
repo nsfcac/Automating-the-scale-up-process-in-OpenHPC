@@ -127,7 +127,7 @@ def generate_Output(vendor,ip, hn):
                                                                ++index
  
                                       c_mac=l[ind+2:ind+19]
-                                      print(nicNumber,c_mac)
+                                      #print(nicNumber,c_mac)
 
                                       SystemInfo['NICs']['NIC'+str(nicNumber)]={}
                                       SystemInfo['NICs']['NIC'+str(nicNumber)]['MACAddress']=c_mac
