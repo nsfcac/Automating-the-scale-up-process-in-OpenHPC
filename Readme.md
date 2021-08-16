@@ -106,18 +106,16 @@ The second one is network discovery, and you have two options, and we can select
 
 Then it asks you to select the path to the cluster information file (Default: ../Doc-Files/clusterInfo).
 
-For IPMI choice:
-
-you also need to choose the vendor of the new compute-nodes(Default=Dell):
+For IPMI choice only, you also need to choose the vendor of the new compute-nodes(Default=Dell):
 
      1) Dell
      2) SuperMicro
      3) Intel
      4) Others
 
-This step is because of having different IPMI commands to gather mac addresses for various vendors. We do not have this step when we use Redfish to collect data. It then shows the collected data in a friendly format and saves them in the ../Doc-Files/ClusterNetInfo.json file. Then it comes back to the menu.
+This step is because the various vendors use different IPMI commands to gather mac addresses. We do not have to worry about such vendor dependencies when we use Redfish to collect data since methods are standardized in this case. The application then shows the collected data in a friendly format and saves them in the ../Doc-Files/ClusterNetInfo.json file. Then it comes back to the menu.
 
-The third option is to Update Cluster Mac Address Information.
+The third option presented by the application is to Update Cluster Mac Address Information.
 
 It asks to select the hardware management technology we want to use, the number of the internal NIC, and the compute prefix we want to use. Then it asks to choose the path to the cluster information file (Default: ../Doc-Files/clusterInfo), and for IPMI, it Also asks to select the compute-nodes vendor.
 
@@ -127,7 +125,7 @@ After collecting data, the gathered discovery Information will be saved in the .
 
 ## 4- Demo
 
-Please visit the following links and check the video which shows how to use the application.
+Please visit the following presentation links and accompanying videos that show how to use the application.
 
 Presentation:
  [Introduce OpenHPC-Get-Mac Application](https://drive.google.com/file/d/1f3Yd5aaDj9zhgw_8wExsCsIUUdvJE7s5/view?usp=sharing)
@@ -136,7 +134,7 @@ Presentation:
 Demo:
  [Introduce OpenHPC-Get-Mac Application](https://drive.google.com/file/d/1rSuk2ugNkjkiPHGa4pc7ef5pP9V6tV05/view?usp=sharing)
 
-• Demo-paer1:  Running the Application in the RedRaider Cluster (using Redfish)
+• Demo-part1:  Running the Application in the RedRaider Cluster (using Redfish)
 
                  • Testbed: RedRaider Cluster
 
@@ -156,7 +154,7 @@ Presentation: https://youtu.be/kDQWN6bbPMc
 
 ## 5- Acknowledgments
 
-This research is supported by the OpenHPC community. Many thanks to the project mentors, Ms. [Nirmala Sundararajan](https://github.com/nirmalasrjn), Mr. [Reese Baird](https://github.com/crbaird), Dr. [Alan Sill](https://github.com/alansill), and Dr. [Yong Chen](https://www.depts.ttu.edu/cs/faculty/yong_chen/index.php); for their guidance, help, and support. It uses the Red Raider Cluster located at the High-Performance Computing Center at Texas Tech University, and also the Zephyr cluster located at the Gleamm (Global Laboratory for Energy Asset Management and Manufacturing) site as testbeds.
+This research was supported by the OpenHPC community through the OpenHPC Mentorship Program. Many thanks to the project mentors, Ms. [Nirmala Sundararajan](https://github.com/nirmalasrjn), Mr. [Reese Baird](https://github.com/crbaird), Dr. [Alan Sill](https://github.com/alansill), and Dr. [Yong Chen](https://www.depts.ttu.edu/cs/faculty/yong_chen/index.php); for their guidance, help, and support. Our project used the RedRaider Cluster located at the High-Performance Computing Center at Texas Tech University and the Zephyr cluster located at the GLEAMM (Global Laboratory for Energy Asset Management and Manufacturing) site as testbeds. We thank the management teams and staff of these facilities for the opportunity to test the application at scale to verify functionality and performance.
 
 ## 6-Support or Contact
 
